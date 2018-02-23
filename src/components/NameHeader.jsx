@@ -27,8 +27,10 @@ const NameContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content : center;
-  background-color: #0B0C10;
+  background-color: #0b0c10bf;
   padding: 30px 0px;
+  position: relative;
+  bottom: 80%;
 `;
 
 const MyName = styled.h1`

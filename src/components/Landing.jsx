@@ -1,10 +1,12 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Particles from 'react-particles-js';
+import NameHeader from './NameHeader';
 
-const AboutMe = () => (
-  <AboutContainer>
-    <Particles width="100%" height="calc(100vh - 143px)" params={particlesConfig} />
+const Landing = () => (
+  <LandingContainer>
+    <Particles width="100%" height="100vh" params={particlesConfig} />
+    <NameHeader />
     <AboutText>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae tellus vitae mauris aliquam porta.
       Fusce lacinia, felis nec pulvinar ultrices, ipsum odio mattis erat, ut fringilla lorem justo nec nibh.
@@ -14,13 +16,13 @@ const AboutMe = () => (
       Fusce pharetra finibus ex eget feugiat. Ut efficitur enim est, sit amet aliquet justo mattis et.
       Duis vitae dui euismod, efficitur sapien id, pharetra tellus. Integer sed quam ultrices, semper ipsum in, maximus nunc.
     </AboutText>
-  </AboutContainer>
+  </LandingContainer>
 );
 
-export default AboutMe;
+export default Landing;
 
-const AboutContainer = styled.div`
-  height: calc(100vh - 143px);
+const LandingContainer = styled.div`
+  height: 100vh;
 `;
 
 const AboutText = styled.p`
