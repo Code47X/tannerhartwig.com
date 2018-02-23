@@ -39,7 +39,7 @@ const AboutText = styled.p`
 const particlesConfig = {
   particles: {
     number: {
-      value: (window.innerWidth > 600 ? 30 : 15),
+      value: 80,
       density: {
         enable: true,
         value_area: 800,
@@ -52,24 +52,24 @@ const particlesConfig = {
       type: 'circle',
       stroke: {
         width: 0,
-        color: '#ffffff',
+        color: '#000000',
       },
       polygon: {
         nb_sides: 5,
       },
     },
     opacity: {
-      value: 1,
+      value: 0.5,
       random: false,
       anim: {
         enable: false,
-        speed: 2,
+        speed: 1,
         opacity_min: 0.1,
         sync: false,
       },
     },
     size: {
-      value: (window.innerWidth > 600 ? 3 : 2),
+      value: 3,
       random: true,
       anim: {
         enable: false,
@@ -80,10 +80,10 @@ const particlesConfig = {
     },
     line_linked: {
       enable: true,
-      distance: (window.innerWidth > 600 ? 150 : 100),
-      color: '#66fcf1',
-      opacity: 1,
-      width: (window.innerWidth > 600 ? 2.5 : 1.5),
+      distance: 150,
+      color: '#66FCF1',
+      opacity: 0.75,
+      width: 1.5,
     },
     move: {
       enable: true,
@@ -100,5 +100,5 @@ const particlesConfig = {
       },
     },
   },
-  retina_detect: true,
+  retina_detect: false,
 };
