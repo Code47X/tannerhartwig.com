@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Particles from 'react-particles-js';
 import NameHeader from './NameHeader';
 
@@ -8,13 +8,12 @@ const Landing = () => (
     <Particles width="100%" height="100vh" params={particlesConfig} />
     <NameHeader />
     <AboutText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae tellus vitae mauris aliquam porta.
-      Fusce lacinia, felis nec pulvinar ultrices, ipsum odio mattis erat, ut fringilla lorem justo nec nibh.
-      Maecenas porta in enim vitae gravida. Maecenas metus ante, congue ut dignissim a, condimentum eu metus.
-      Sed nunc mi, molestie sit amet enim scelerisque, pharetra dictum purus. Integer dignissim metus sit amet
-      orci blandit, non condimentum orci fermentum. Aenean condimentum augue nec vestibulum volutpat.
-      Fusce pharetra finibus ex eget feugiat. Ut efficitur enim est, sit amet aliquet justo mattis et.
-      Duis vitae dui euismod, efficitur sapien id, pharetra tellus. Integer sed quam ultrices, semper ipsum in, maximus nunc.
+      Hey there! I'm Tanner, a full-stack developer with a thing for elegant minimalist designs.
+      While web development is my forte, I enjoy developing on a variety of different platforms and SDKs.
+      Everything from VR game development with Unity to data visualization with D3. If it involves programming
+      chances are I'm intrested in it! I believe software development is as much an art as it is a science,
+      and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
+      what you think! As Linus Torvalds once said "Talk is cheap. Show me the code!"
     </AboutText>
   </LandingContainer>
 );
@@ -26,8 +25,8 @@ const LandingContainer = styled.div`
 `;
 
 const AboutText = styled.p`
-  width: 600px;
-  text-align: center;
+  width: 610px;
+  text-align: justify;
   position: relative;
   bottom: 75%;
   margin: auto;
