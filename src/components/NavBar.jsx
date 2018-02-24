@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { fadeIn, pulse } from 'react-animations';
+import Sticky from 'react-sticky-el';
 
 class NavBar extends PureComponent {
   state = {
@@ -21,20 +22,22 @@ class NavBar extends PureComponent {
 
   render() {
     return (
-      <NavBarContainer>
-        <NavOption onClick={() => this.handleClick('Skills')}>
-          <p>Skills</p>
-          {this.state.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
-        </NavOption>
-        <NavOption onClick={() => this.handleClick('Projects')}>
-          <p>Projects</p>
-          {this.state.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
-        </NavOption>
-        <NavOption onClick={() => this.handleClick('Hire Me')}>
-          <p>Hire Me</p>
-          {this.state.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
-        </NavOption>
-      </NavBarContainer>
+      <Sticky stickyStyle={{ zIndex: 2 }}>
+        <NavBarContainer>
+          <NavOption onClick={() => this.handleClick('Skills')}>
+            <p>Skills</p>
+            {this.state.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
+          </NavOption>
+          <NavOption onClick={() => this.handleClick('Projects')}>
+            <p>Projects</p>
+            {this.state.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
+          </NavOption>
+          <NavOption onClick={() => this.handleClick('Hire Me')}>
+            <p>Hire Me</p>
+            {this.state.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
+          </NavOption>
+        </NavBarContainer>
+      </Sticky>
     );
   }
 }
@@ -49,7 +52,7 @@ const NavBarContainer = styled.div`
   justify-content: space-between;
   width: 95%;
   background-color: #C5C6C7;
-  margin: auto;
+  margin: 10px auto 0px;
 `;
 
 const NavOption = styled.div`

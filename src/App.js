@@ -9,6 +9,7 @@ class App extends Component {
       <div className="App">
         <Landing />
         <NavBar />
+        <div style={{ height: 5000 }} />
       </div>
     );
   }
