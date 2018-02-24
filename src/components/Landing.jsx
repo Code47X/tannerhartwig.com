@@ -1,20 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'font-awesome/css/font-awesome.min.css';
+import 'animate.css/animate.min.css';
+
 import NameHeader from './NameHeader';
 
 const Landing = () => (
   <LandingContainer>
     <Particles width="100%" height="100vh" params={particlesConfig} />
-    <NameHeader />
-    <AboutText>
-      Hey there! I'm Tanner, a full-stack developer with a thing for elegant minimalist designs.
-      While web development is my forte, I enjoy developing on a variety of different platforms and SDKs.
-      Everything from VR game development with Unity to data visualization with D3. If it involves programming
-      chances are I'm intrested in it! I believe software development is as much an art as it is a science,
-      and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
-      what you think! As Linus Torvalds once said "Talk is cheap. Show me the code!"
-    </AboutText>
+    <Info>
+      <NameHeader />
+      <AboutText>
+        Hey there! I'm Tanner, a full-stack developer with a thing for elegant minimalist designs.
+        While web development is my forte, I enjoy developing on a variety of different platforms and SDKs.
+        Everything from VR game development with Unity to data visualization with D3. If it involves programming
+        chances are I'm intrested in it. I believe software development is as much an art as it is a science,
+        and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
+        what you think! As Linus Torvalds once said "Talk is cheap. Show me the code!"
+      </AboutText>
+      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5000} offset={0}>
+        <Arrow className="arrow bounce">
+          <i className="fa fa-angle-down fa-2x" />
+        </Arrow>
+      </ScrollAnimation>
+    </Info>
   </LandingContainer>
 );
 
@@ -24,17 +35,26 @@ const LandingContainer = styled.div`
   height: 100vh;
 `;
 
+const Info = styled.div`
+  position: relative;
+  bottom: 90%;
+`;
+
 const AboutText = styled.p`
   width: 610px;
   text-align: justify;
-  position: relative;
-  bottom: 75%;
-  margin: auto;
+  margin: 100px auto 0px;
 
   @media (max-width: 650px) {
     font-size: 0.75em;
     width: 75%;
+    text-align: center;
+    margin-top: 50px;
   }
+`;
+
+const Arrow = styled.div`
+  text-align: center;
 `;
 
 const particlesConfig = {

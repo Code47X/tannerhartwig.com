@@ -29,8 +29,6 @@ const NameContainer = styled.div`
   justify-content : center;
   background-color: #0b0c10bf;
   padding: 30px 0px;
-  position: relative;
-  bottom: 80%;
 `;
 
 const MyName = styled.h1`
