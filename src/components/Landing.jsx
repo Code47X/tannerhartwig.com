@@ -13,14 +13,14 @@ const Landing = () => (
     <Info>
       <NameHeader />
       <AboutText>
-        Hey there! I'm Tanner, a full-stack developer with a thing for elegant minimalist designs.
+        Hey there! I'm Tanner, a full-stack developer with a taste for minimalist design.
         While web development is my forte, I enjoy developing on a variety of different platforms and SDKs.
         Everything from VR game development with Unity to data visualization with D3. If it involves programming
         chances are I'm intrested in it. I believe software development is as much an art as it is a science,
         and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
-        what you think! As Linus Torvalds once said "Talk is cheap. Show me the code!"
+        what you think! As Linus Torvalds said, "Talk is cheap. Show me the code."
       </AboutText>
-      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5000} offset={0}>
+      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5500} offset={0}>
         <Arrow className="arrow bounce">
           <i className="fa fa-angle-down fa-2x" />
         </Arrow>
@@ -42,13 +42,12 @@ const Info = styled.div`
 
 const AboutText = styled.p`
   width: 610px;
-  text-align: justify;
+  text-align: center;
   margin: 100px auto 0px;
 
   @media (max-width: 650px) {
     font-size: 0.75em;
     width: 75%;
-    text-align: center;
     margin-top: 50px;
   }
 `;
