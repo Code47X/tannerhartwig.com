@@ -18,15 +18,15 @@ class NavBar extends PureComponent {
       <Sticky stickyStyle={{ zIndex: 2 }}>
         <NavBarContainer>
           <NavOption onClick={() => this.handleClick('Skills')}>
-            <p>Skills</p>
+            <NavText>Skills</NavText>
             {this.props.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
           <NavOption onClick={() => this.props.changeSelectedNav('Projects')}>
-            <p>Projects</p>
+            <NavText>Projects</NavText>
             {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
           <NavOption onClick={() => this.props.changeSelectedNav('Hire Me')}>
-            <p>Hire Me</p>
+            <NavText>Hire Me</NavText>
             {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
         </NavBarContainer>
@@ -58,6 +58,17 @@ const NavOption = styled.div`
 
   &:hover {
     animation: 1s ${pulseAnim};
+  }
+`;
+
+const NavText = styled.p`
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @media (max-width: 1000px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 `;
 
