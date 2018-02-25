@@ -3,21 +3,14 @@ import styled, { keyframes } from 'styled-components';
 import { fadeIn, pulse } from 'react-animations';
 import Sticky from 'react-sticky-el';
 
+const smoothScroll = require('smoothscroll');
+
 class NavBar extends PureComponent {
-  state = {
-    selectedNav: '',
-  }
-
-  changeSelectedNav = (newNav) => {
-    this.setState({
-      selectedNav: newNav,
-    });
-  }
-
   handleClick = (navOption) => {
-    // Function WIP
-    this.changeSelectedNav(navOption);
-    console.log(navOption);
+    this.props.changeSelectedNav(navOption);
+
+    const destination = document.querySelector(`.${navOption}`);
+    smoothScroll(destination);
   }
 
   render() {
@@ -26,15 +19,15 @@ class NavBar extends PureComponent {
         <NavBarContainer>
           <NavOption onClick={() => this.handleClick('Skills')}>
             <p>Skills</p>
-            {this.state.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
+            {this.props.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
-          <NavOption onClick={() => this.handleClick('Projects')}>
+          <NavOption onClick={() => this.props.changeSelectedNav('Projects')}>
             <p>Projects</p>
-            {this.state.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
+            {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
-          <NavOption onClick={() => this.handleClick('Hire Me')}>
+          <NavOption onClick={() => this.props.changeSelectedNav('Hire Me')}>
             <p>Hire Me</p>
-            {this.state.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
+            {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
           </NavOption>
         </NavBarContainer>
       </Sticky>
