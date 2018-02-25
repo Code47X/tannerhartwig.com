@@ -44,7 +44,6 @@ const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 95%;
-  background-color: #C5C6C7;
   margin: 10px auto 0px;
 `;
 
@@ -53,8 +52,9 @@ const NavOption = styled.div`
   color: white;
   flex-basis: 25%;
   text-align: center;
-  background-color: #0b0c10bf;
+  background-color: #0b0c10eb;
   border-radius: 7px;
+  box-shadow: 0 0 5px #66FCF1;
 
   &:hover {
     animation: 1s ${pulseAnim};
@@ -62,14 +62,14 @@ const NavOption = styled.div`
 `;
 
 const WhiteUnderline = styled.div`
-  margin: auto;
+  margin: 0px auto 5px;
   height: 5px;
   width: 75%;
   background-color: white;
 `;
 
 const CyanUnderline = styled.div`
-  margin: auto;
+  margin: 0px auto 5px;
   height: 5px;
   width: 75%;
   background-color: #66FCF1;

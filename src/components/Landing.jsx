@@ -20,7 +20,7 @@ const Landing = () => (
         and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
         what you think! As Linus Torvalds said, "Talk is cheap. Show me the code."
       </AboutText>
-      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5500} offset={0}>
+      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5000} offset={0}>
         <Arrow className="arrow bounce">
           <i className="fa fa-angle-down fa-2x" />
         </Arrow>

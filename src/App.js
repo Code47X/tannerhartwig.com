@@ -13,8 +13,6 @@ class App extends PureComponent {
     this.setState({
       selectedNav: newNav,
     });
-
-    console.log('hi');
   }
 
 
