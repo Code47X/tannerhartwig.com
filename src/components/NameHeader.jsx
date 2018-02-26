@@ -7,10 +7,10 @@ import 'animate.css/animate.min.css';
 const NameHeader = () => (
   <NameContainer>
     <DividerLineTop />
-    <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={1000} offset={0}>
+    <ScrollAnimation animateIn="fadeIn" animateOnce duration={3} delay={1000} offset={0}>
       <MyName>Tanner Hartwig</MyName>
     </ScrollAnimation>
-    <ScrollAnimation animateIn="fadeInDown" animateOnce duration={1} delay={3000} offset={0}>
+    <ScrollAnimation animateIn="fadeInDown" animateOnce duration={1} delay={2000} offset={0}>
       <WebDevTag>Web Developer</WebDevTag>
     </ScrollAnimation>
     <DividerLineBot />

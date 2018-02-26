@@ -17,18 +17,20 @@ class NavBar extends PureComponent {
     return (
       <Sticky stickyStyle={{ zIndex: 2 }}>
         <NavBarContainer>
-          <NavOption onClick={() => this.handleClick('Skills')}>
-            <NavText>Skills</NavText>
-            {this.props.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
-          </NavOption>
-          <NavOption onClick={() => this.props.changeSelectedNav('Projects')}>
-            <NavText>Projects</NavText>
-            {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
-          </NavOption>
-          <NavOption onClick={() => this.props.changeSelectedNav('Hire Me')}>
-            <NavText>Hire Me</NavText>
-            {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
-          </NavOption>
+          <NavContent>
+            <NavOption onClick={() => this.handleClick('Skills')}>
+              <NavText>Skills</NavText>
+              {this.props.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
+            </NavOption>
+            <NavOption onClick={() => this.props.changeSelectedNav('Projects')}>
+              <NavText>Projects</NavText>
+              {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
+            </NavOption>
+            <NavOption onClick={() => this.props.changeSelectedNav('Hire Me')}>
+              <NavText>Hire Me</NavText>
+              {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
+            </NavOption>
+          </NavContent>
         </NavBarContainer>
       </Sticky>
     );
@@ -41,20 +43,25 @@ const fadeInAnim = keyframes`${fadeIn}`;
 const pulseAnim = keyframes`${pulse}`;
 
 const NavBarContainer = styled.div`
+  width: 100%;
+  background-color: #0b0c10bf;
+`;
+
+const NavContent = styled.div`
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin: 10px auto 0px;
 `;
 
 const NavOption = styled.div`
-
   color: white;
-  flex-basis: 25%;
+  flex-basis: 30%;
   text-align: center;
   background-color: #0b0c10eb;
   border-radius: 7px;
   box-shadow: 0 0 5px #66FCF1;
+  margin: 10px auto 10px;
 
   &:hover {
     animation: 1s ${pulseAnim};

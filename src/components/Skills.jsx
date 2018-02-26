@@ -125,7 +125,6 @@ const Icon = styled.div`
 `;
 const IconImg = styled.img`
   max-width: 90%;
-  min-width: 60px;
   height: 250px;
   background-color: #5d6063;
   border-radius: 70px;
@@ -135,21 +134,26 @@ const IconImg = styled.img`
     border-radius: 40px;
   }
 
-  @media (max-width: 1000px) {
-    height: 90px;
+  @media (max-width: 1100px) {
+    height: 140px;
     border-radius: 20px;
   }
 
-  @media (max-width: 700px) {
-    height: 70px;
+  @media (max-width: 750px) {
+    height: 75px;
     border-radius: 10px;
+  }
+
+  @media (max-width: 500px) {
+    height: 50px;
+    border-radius: 7px;
   }
 `;
 
 const IconText = styled.h2`
   color: white;
 
-  @media (max-width: 700px) {
+  @media (max-width: 750px) {
     font-size: 1em;
   }
 `;

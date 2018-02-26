@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
-import ScrollAnimation from 'react-animate-on-scroll';
 import 'font-awesome/css/font-awesome.min.css';
-import 'animate.css/animate.min.css';
 
 import NameHeader from './NameHeader';
 
@@ -20,11 +18,9 @@ const Landing = () => (
         and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
         what you think! As Linus Torvalds said, "Talk is cheap. Show me the code."
       </AboutText>
-      <ScrollAnimation animateIn="fadeIn" animateOnce duration={5} delay={5000} offset={0}>
-        <Arrow className="arrow bounce">
-          <i className="fa fa-angle-down fa-2x" />
-        </Arrow>
-      </ScrollAnimation>
+      <Arrow className="arrow bounce">
+        <i className="fa fa-angle-down fa-2x" />
+      </Arrow>
     </Info>
   </LandingContainer>
 );
