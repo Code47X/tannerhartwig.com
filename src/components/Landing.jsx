@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
 import 'font-awesome/css/font-awesome.min.css';
+import 'typeface-jura';
 
 import NameHeader from './NameHeader';
 
@@ -37,13 +38,15 @@ const Info = styled.div`
 `;
 
 const AboutText = styled.p`
-  width: 610px;
+  width: 700px;
   text-align: center;
   margin: 100px auto 0px;
+  font-family: 'jura';
+  font-size: 1.5em;
 
-  @media (max-width: 650px) {
-    font-size: 0.75em;
-    width: 75%;
+  @media (max-width: 750px) {
+    font-size: .75em;
+    width: 85%;
     margin-top: 50px;
   }
 `;

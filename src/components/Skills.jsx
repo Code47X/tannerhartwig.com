@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
+import 'typeface-jura';
 import 'animate.css/animate.min.css';
 
 // Icons
@@ -105,10 +106,12 @@ const SkillsContainer = styled.div`
 const Title = styled.h1`
   text-align: center;
   padding-top: 75px;
+  font-family: 'jura';
 `;
 
 const ToolsHeader = styled.h2`
   text-align: center;
+  font-family: 'jura';
 `;
 
 const IconsContainer = styled.div`
@@ -157,6 +160,7 @@ const IconImg = styled.img`
 
 const IconText = styled.h3`
   color: white;
+  font-family: 'jura';
 
   @media (max-width: 750px) {
     font-size: 1em;

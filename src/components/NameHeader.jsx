@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { fadeInLeft, fadeInRight } from 'react-animations';
 import ScrollAnimation from 'react-animate-on-scroll';
+import 'typeface-teko';
 import 'animate.css/animate.min.css';
 
 const NameHeader = () => (
@@ -33,7 +34,9 @@ const NameContainer = styled.div`
 
 const MyName = styled.h1`
   color: #66FCF1;
-  margin: 10px 0px 0px;
+  margin: 4px 0px 0px;
+  font-family: 'teko';
+  font-size: 2.5em;
 `;
 
 const DividerLineTop = styled.div`
@@ -54,6 +57,8 @@ animation: 1s ${fadeLeftAnim};
 
 const WebDevTag = styled.p`
   color: white;
-  margin: 0px 0px 10px;
+  margin: -15px 0px 4px;
+  font-family: 'teko';
+  font-size: 1.5em;
 `;
 

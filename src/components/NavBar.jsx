@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { fadeIn, pulse } from 'react-animations';
 import Sticky from 'react-sticky-el';
+import 'typeface-rajdhani';
+
 
 const smoothScroll = require('smoothscroll');
 
@@ -72,10 +74,13 @@ const NavText = styled.p`
   margin: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: 'Rajdhani';
+  font-size: 1.5em;
 
   @media (max-width: 1000px) {
     padding-top: 0px;
     padding-bottom: 0px;
+    font-size: 1.2em;
   }
 `;
 

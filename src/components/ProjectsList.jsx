@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Banner from './Banner';
+import 'typeface-jura';
 import 'animate.css/animate.min.css';
 
 // Project Banners
@@ -41,6 +42,7 @@ const ProjectsListContainer = styled.div`
 const Title = styled.h1`
   margin: auto;
   padding-top: 75px;
+  font-family: 'jura';
 `;
 
 const ProjectsContainer = styled.div`
