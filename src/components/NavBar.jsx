@@ -22,11 +22,11 @@ class NavBar extends PureComponent {
               <NavText>Skills</NavText>
               {this.props.selectedNav === 'Skills' ? <CyanUnderline /> : <WhiteUnderline />}
             </NavOption>
-            <NavOption onClick={() => this.props.changeSelectedNav('Projects')}>
+            <NavOption onClick={() => this.handleClick('Projects')}>
               <NavText>Projects</NavText>
               {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
             </NavOption>
-            <NavOption onClick={() => this.props.changeSelectedNav('Hire Me')}>
+            <NavOption onClick={() => this.handleClick('Hire Me')}>
               <NavText>Hire Me</NavText>
               {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
             </NavOption>

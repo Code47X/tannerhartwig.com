@@ -19,6 +19,7 @@ class Skills extends PureComponent {
   render() {
     return (
       <SkillsContainer className="Skills">
+        <Title>My Skills</Title>
         <ScrollAnimation animateIn="fadeIn" duration={0.5} offset={0} afterAnimatedIn={() => this.props.changeSelectedNav('Skills')}>
           <ToolsHeader>My Forte</ToolsHeader>
         </ScrollAnimation>
@@ -98,12 +99,16 @@ class Skills extends PureComponent {
 export default Skills;
 
 const SkillsContainer = styled.div`
-  width: 100%;
+  background-color: #5d6063;
 `;
 
-const ToolsHeader = styled.h1`
+const Title = styled.h1`
   text-align: center;
-  padding-top: 150px;
+  padding-top: 75px;
+`;
+
+const ToolsHeader = styled.h2`
+  text-align: center;
 `;
 
 const IconsContainer = styled.div`
@@ -150,7 +155,7 @@ const IconImg = styled.img`
   }
 `;
 
-const IconText = styled.h2`
+const IconText = styled.h3`
   color: white;
 
   @media (max-width: 750px) {
