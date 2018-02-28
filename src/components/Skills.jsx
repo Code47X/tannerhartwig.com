@@ -19,7 +19,7 @@ class Skills extends PureComponent {
   render() {
     return (
       <SkillsContainer className="Skills">
-        <Title>My Skills</Title>
+        <Title>Skills</Title>
         <ScrollAnimation animateIn="fadeIn" duration={0.5} offset={0} afterAnimatedIn={() => this.props.changeSelectedNav('Skills')}>
           <ToolsHeader>My Forte</ToolsHeader>
         </ScrollAnimation>

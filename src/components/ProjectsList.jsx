@@ -18,7 +18,7 @@ class ProjectsList extends PureComponent {
     return (
       <ProjectsListContainer className="Projects">
         <ProjectsContainer>
-          <Title>My Projects</Title>
+          <Title>Projects</Title>
           {projects.map(project => (
             <Project key={project.name}>
               <ScrollAnimation animateIn="fadeInUp" duration={0.5} offset={50} afterAnimatedIn={() => this.props.changeSelectedNav('Projects')}>
