@@ -70,8 +70,8 @@ const NavOption = styled.div`
 
 const NavText = styled.p`
   margin: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (max-width: 1000px) {
     padding-top: 0px;
