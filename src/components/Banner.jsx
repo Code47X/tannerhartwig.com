@@ -15,9 +15,9 @@ const BannerImg = styled.img`
   width: 820px;
   max-width: 100%;
   border-radius: 25px;
-  box-shadow: 0 0 35px white;
+  box-shadow: 0 0 35px #66FCF1;
 
   &:hover {
-    box-shadow: 0 0 35px #66FCF1;
+    box-shadow: 0 0 50px #66FCF1;
   }
 `;
