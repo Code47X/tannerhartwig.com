@@ -72,8 +72,8 @@ const NavOption = styled.div`
 
 const NavText = styled.p`
   margin: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: 'Rajdhani';
   font-size: 1.5em;
 
