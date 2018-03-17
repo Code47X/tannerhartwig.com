@@ -17,7 +17,7 @@ const Landing = () => (
         Everything from VR game development with Unity to data visualization with D3. If it involves programming
         chances are I'm intrested in it. I believe software development is as much an art as it is a science,
         and pride myself on writing clean, human readable code. Have a look at some of my projects and let me know
-        what you think! As Linus Torvalds said, "Talk is cheap. Show me the code."
+        what you think! Linus Torvalds said it best, "Talk is cheap. Show me the code."
       </AboutText>
       <Arrow className="arrow bounce">
         <i className="fa fa-angle-down fa-2x" />

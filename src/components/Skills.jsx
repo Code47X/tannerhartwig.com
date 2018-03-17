@@ -136,7 +136,7 @@ const IconImg = styled.img`
   height: 250px;
   background-color: #5d6063;
   border-radius: 70px;
-  box-shadow: 0 0 30px #66FCF1;
+  box-shadow: 0 0 20px #66FCF1;
 
   @media (max-width: 1400px) {
     height: 200px;
