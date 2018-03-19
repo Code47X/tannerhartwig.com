@@ -101,6 +101,7 @@ export default Skills;
 
 const SkillsContainer = styled.div`
   background-color: #5d6063;
+  padding-bottom: 200px;
 `;
 
 const Title = styled.h1`

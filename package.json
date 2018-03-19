@@ -9,6 +9,7 @@
     "react-animate-on-scroll": "^2.0.1",
     "react-animations": "^1.0.0",
     "react-dom": "^16.2.0",
+    "react-parallax": "^1.6.1",
     "react-particles-js": "^2.1.0",
     "react-scripts": "1.1.1",
     "react-sticky-el": "^1.0.16",
