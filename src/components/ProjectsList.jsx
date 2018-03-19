@@ -7,11 +7,13 @@ import 'animate.css/animate.min.css';
 
 // Project Banners
 import reactMovieDbBanner from '../banners/react-movie-db-banner.svg';
-import txCrimeHeatBaanner from '../banners/tx-crime-heatmap-banner.svg';
+import txCrimeHeatBanner from '../banners/tx-crime-heatmap-banner.svg';
+import hotsInfoBanner from '../banners/hots-info-banner.svg';
 
 const projects = [
   { name: 'React Movie DB', banner: reactMovieDbBanner },
-  { name: 'Texas Crime Heatmap', banner: txCrimeHeatBaanner },
+  { name: 'Texas Crime Heatmap', banner: txCrimeHeatBanner },
+  { name: 'HotS Info', banner: hotsInfoBanner },
 ];
 
 class ProjectsList extends PureComponent {
