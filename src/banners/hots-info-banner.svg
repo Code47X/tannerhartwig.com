@@ -16,7 +16,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="hots-info.svg">
+   sodipodi:docname="hots-info-banner.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,7 +28,7 @@
      inkscape:cx="512"
      inkscape:cy="-371.42857"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="2493"
      inkscape:window-height="1385"
@@ -55,12 +55,12 @@
      inkscape:label="Bg"
      style="display:inline">
     <rect
-       style="fill:#1d0855;fill-opacity:1;stroke-width:0.8386699"
+       style="fill:#1d0855;fill-opacity:1;stroke-width:0.5554834"
        id="rect1385"
-       width="1582.8572"
-       height="642.85712"
-       x="-195.71426"
-       y="-75.714287" />
+       width="1048.5714"
+       height="425.71426"
+       x="-12.857121"
+       y="-10.000001" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -268,7 +268,7 @@ hNBz/w/yfu9KNjkRpgAAAABJRU5ErkJggg==
            y="304.0448"
            x="160.84729"
            id="tspan1399"
-           sodipodi:role="line">H  tS</tspan></text>
+           sodipodi:role="line">H</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -281,5 +281,15 @@ hNBz/w/yfu9KNjkRpgAAAABJRU5ErkJggg==
          x="399.28067"
          y="374.97833"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Umpush;-inkscape-font-specification:Umpush;stroke-width:2.9568491">Info</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.66665649px;line-height:1.25;font-family:Umpush;-inkscape-font-specification:Umpush;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;"
+       x="620"
+       y="248.57143"
+       id="text1510"><tspan
+         sodipodi:role="line"
+         id="tspan1508"
+         x="620"
+         y="248.57143">tS</tspan></text>
   </g>
 </svg>
