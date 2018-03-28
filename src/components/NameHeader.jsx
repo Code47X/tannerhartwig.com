@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { fadeInLeft, fadeInRight } from 'react-animations';
 import ScrollAnimation from 'react-animate-on-scroll';
-import 'typeface-teko';
+import 'typeface-orbitron';
 import 'animate.css/animate.min.css';
 
 const NameHeader = () => (
@@ -34,13 +34,13 @@ const NameContainer = styled.div`
 
 const MyName = styled.h1`
   color: #66FCF1;
-  margin: 4px 0px 0px;
-  font-family: 'teko';
+  margin: 7px 0px;
+  font-family: 'orbitron';
   font-size: 2.5em;
 `;
 
 const DividerLineTop = styled.div`
-  width: 300px;
+  width: 500px;
   border-style: solid;
   border-width: 2px;
   border-color: #C5C6C7;
@@ -48,7 +48,7 @@ const DividerLineTop = styled.div`
 `;
 
 const DividerLineBot = styled.div`
-width: 300px;
+width: 500px;
 border-style: solid;
 border-width: 2px;
 border-color: #C5C6C7;
@@ -57,8 +57,8 @@ animation: 1s ${fadeLeftAnim};
 
 const WebDevTag = styled.p`
   color: white;
-  margin: -15px 0px 4px;
-  font-family: 'teko';
+  margin: -2px 0px 7px;
+  font-family: 'orbitron';
   font-size: 1.5em;
 `;
 

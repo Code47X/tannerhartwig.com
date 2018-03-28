@@ -16,8 +16,8 @@
     "smoothscroll": "^0.4.0",
     "styled-components": "^3.1.6",
     "typeface-jura": "0.0.54",
-    "typeface-rajdhani": "0.0.54",
-    "typeface-teko": "0.0.54"
+    "typeface-orbitron": "0.0.54",
+    "typeface-rajdhani": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

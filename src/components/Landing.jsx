@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Particles from 'react-particles-js';
 import 'font-awesome/css/font-awesome.min.css';
 import 'typeface-jura';
+import 'typeface-orbitron';
 
 import NameHeader from './NameHeader';
 
