@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ProjectsList from './components/ProjectsList';
 import Skills from './components/Skills';
 import Hire from './components/Hire';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends PureComponent {
@@ -26,7 +27,7 @@ class App extends PureComponent {
         <ProjectsList changeSelectedNav={this.changeSelectedNav} />
         <Skills changeSelectedNav={this.changeSelectedNav} />
         <Hire />
-        <div style={{ height: 5000 }} /> // for testing scrolling
+        <Footer />
       </div>
     );
   }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Parallax } from 'react-parallax';
 
 const Hire = () => (
-  <HireContainer>
+  <HireContainer className="Hire">
     <Parallax
       blur={0}
       bgImage={require('../backgrounds/atx.jpg')}
@@ -13,7 +13,7 @@ const Hire = () => (
       <ParallaxText>Hire me in Austin!</ParallaxText>
       <ParallaxBody />
     </Parallax>
-    <div style={{ height: 10000 }} />
+    <div style={{ height: 600 }} />
   </HireContainer>
 );
 
@@ -21,8 +21,6 @@ export default Hire;
 
 const HireContainer = styled.div`
   background-color: #5d6063;
-  position:relative;
-  top: -40px;
 
   @media (max-width: 700px) {
     top: -25px;

@@ -28,9 +28,9 @@ class NavBar extends PureComponent {
               <NavText>Projects</NavText>
               {this.props.selectedNav === 'Projects' ? <CyanUnderline /> : <WhiteUnderline />}
             </NavOption>
-            <NavOption onClick={() => this.handleClick('Hire Me')}>
+            <NavOption onClick={() => this.handleClick('Hire')}>
               <NavText>Hire Me</NavText>
-              {this.props.selectedNav === 'Hire Me' ? <CyanUnderline /> : <WhiteUnderline />}
+              {this.props.selectedNav === 'Hire' ? <CyanUnderline /> : <WhiteUnderline />}
             </NavOption>
           </NavContent>
         </NavBarContainer>
