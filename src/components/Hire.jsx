@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from 'react-parallax';
 
 const Hire = () => (
   <HireContainer className="Hire">
-    <Parallax
-      blur={0}
-      bgImage={require('../backgrounds/atx.jpg')}
-      bgImageAlt="Austin, TX"
-      strength={150}
-    >
-      <ParallaxText>Hire me in Austin!</ParallaxText>
-      <ParallaxBody />
-    </Parallax>
+    <ScrollAnimation animateIn="fadeIn" duration={2} offset={150}>
+      <Parallax
+        blur={0}
+        bgImage={require('../backgrounds/atx.jpg')}
+        bgImageAlt="Austin, TX"
+        strength={150}
+      >
+        <ParallaxText>Hire me in Austin!</ParallaxText>
+        <ParallaxBody />
+      </Parallax>
+    </ScrollAnimation>
     <div style={{ height: 600 }} />
   </HireContainer>
 );

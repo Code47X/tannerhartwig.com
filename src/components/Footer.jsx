@@ -11,7 +11,7 @@ const Footer = () => (
     <FooterText>
       Nerd like me?<br />
       <Cyan>Check out the source</Cyan>
-      <PullRight>Designed by <Cyan>Tanner</Cyan></PullRight>
+      <PullRight>Made with <i className="fa fa-heart" style={{ color: 'white' }} /> by <Cyan>Tanner</Cyan></PullRight>
     </FooterText>
   </FooterContainer>
 );
