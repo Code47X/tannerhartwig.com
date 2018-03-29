@@ -36,11 +36,12 @@ const MyName = styled.h1`
   color: #66FCF1;
   margin: 7px 0px;
   font-family: 'orbitron';
-  font-size: 2.5em;
+  font-size: 2em;
 `;
 
 const DividerLineTop = styled.div`
-  width: 500px;
+  width: 85%;
+  max-width: 675px;
   border-style: solid;
   border-width: 2px;
   border-color: #C5C6C7;
@@ -48,17 +49,18 @@ const DividerLineTop = styled.div`
 `;
 
 const DividerLineBot = styled.div`
-width: 500px;
-border-style: solid;
-border-width: 2px;
-border-color: #C5C6C7;
-animation: 1s ${fadeLeftAnim};
+  width: 85%;
+  max-width: 675px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C5C6C7;
+  animation: 1s ${fadeLeftAnim};
 `;
 
 const WebDevTag = styled.p`
   color: white;
   margin: -2px 0px 7px;
   font-family: 'orbitron';
-  font-size: 1.5em;
+  font-size: 1em;
 `;
 

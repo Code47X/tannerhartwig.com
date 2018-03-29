@@ -9,11 +9,13 @@ import 'animate.css/animate.min.css';
 import reactMovieDbBanner from '../banners/react-movie-db-banner.svg';
 import txCrimeHeatBanner from '../banners/tx-crime-heatmap-banner.svg';
 import hotsInfoBanner from '../banners/hots-info-banner.svg';
+import rchBanner from '../banners/rch-banner.svg';
 
 const projects = [
   { name: 'React Movie DB', banner: reactMovieDbBanner },
   { name: 'Texas Crime Heatmap', banner: txCrimeHeatBanner },
   { name: 'HotS Info', banner: hotsInfoBanner },
+  { name: 'Reddit Comment Highlighter', banner: rchBanner },
 ];
 
 class ProjectsList extends PureComponent {

@@ -9,8 +9,9 @@ const Footer = () => (
       <SocialIcon className="fa fa-linkedin-square fa-4x" style={{ color: 'white' }} />
     </SocialIconsContainer>
     <FooterText>
-      Nerd like me? <Cyan>Check out the source</Cyan>
-      <PullRight>Designed with care by <Cyan>Tanner</Cyan></PullRight>
+      Nerd like me?<br />
+      <Cyan>Check out the source</Cyan>
+      <PullRight>Designed by <Cyan>Tanner</Cyan></PullRight>
     </FooterText>
   </FooterContainer>
 );
@@ -36,6 +37,8 @@ const SocialIcon = styled.i`
 `;
 
 const FooterText = styled.p`
+  position: relative;
+  top: -10px;
   margin-left: 5px;
   margin-right: 5px;
   color: white;
