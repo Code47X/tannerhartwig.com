@@ -12,10 +12,10 @@ import hotsInfoBanner from '../banners/hots-info-banner.svg';
 import rchBanner from '../banners/rch-banner.svg';
 
 const projects = [
-  { name: 'React Movie DB', banner: reactMovieDbBanner },
-  { name: 'Texas Crime Heatmap', banner: txCrimeHeatBanner },
-  { name: 'HotS Info', banner: hotsInfoBanner },
-  { name: 'Reddit Comment Highlighter', banner: rchBanner },
+  { name: 'React Movie DB', banner: reactMovieDbBanner, url: 'https://github.com/Code47X/react-movie-db' },
+  { name: 'Texas Crime Heatmap', banner: txCrimeHeatBanner, url: 'https://github.com/Code47X/TX-Data-Project' },
+  { name: 'HotS Info', banner: hotsInfoBanner, url: 'https://github.com/Code47X/react-hots-site' },
+  { name: 'Reddit Comment Highlighter', banner: rchBanner, url: 'https://chrome.google.com/webstore/detail/reddit-top-level-comment/bmikcahnmnmpcppedcdngcmfongjcloo?hl=en' },
 ];
 
 class ProjectsList extends PureComponent {
@@ -27,7 +27,9 @@ class ProjectsList extends PureComponent {
           {projects.map(project => (
             <Project key={project.name}>
               <ScrollAnimation animateIn="fadeInUp" duration={0.5} offset={50} afterAnimatedIn={() => this.props.changeSelectedNav('Projects')}>
-                <Banner banner={project.banner} />
+                <a href={project.url}>
+                  <Banner banner={project.banner} />
+                </a>
               </ScrollAnimation>
             </Project>
           ))}
