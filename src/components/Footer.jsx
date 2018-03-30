@@ -5,12 +5,16 @@ import 'font-awesome/css/font-awesome.min.css';
 const Footer = () => (
   <FooterContainer>
     <SocialIconsContainer>
-      <SocialIcon className="fa fa-github-square fa-4x" style={{ color: 'white' }} />
-      <SocialIcon className="fa fa-linkedin-square fa-4x" style={{ color: 'white' }} />
+      <a href="https://github.com/Code47X">
+        <SocialIcon className="fa fa-github-square fa-4x" />
+      </a>
+      <a href="https://www.linkedin.com/in/tannerhartwig/">
+        <SocialIcon className="fa fa-linkedin-square fa-4x" />
+      </a>
     </SocialIconsContainer>
     <FooterText>
       Nerd like me?<br />
-      <Cyan>Check out the source</Cyan>
+      <a href="https://github.com/Code47X/tannerhartwig.com" style={{ textDecoration: 'none' }}><Cyan>Check out the source</Cyan></a>
       <PullRight>Made with <i className="fa fa-heart" style={{ color: 'white' }} /> by <Cyan>Tanner</Cyan></PullRight>
     </FooterText>
   </FooterContainer>
@@ -33,7 +37,7 @@ const SocialIconsContainer = styled.div`
 
 const SocialIcon = styled.i`
   color: white;
-  padding: 25px;
+  margin: 25px;
 `;
 
 const FooterText = styled.p`

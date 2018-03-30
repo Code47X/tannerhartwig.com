@@ -5,7 +5,7 @@ import { Parallax } from 'react-parallax';
 
 const Hire = () => (
   <HireContainer className="Hire">
-    <ScrollAnimation animateIn="fadeIn" duration={2} offset={150}>
+    <ScrollAnimation animateIn="fadeIn" duration={2} offset={100}>
       <Parallax
         blur={0}
         bgImage={require('../backgrounds/atx.jpg')}
