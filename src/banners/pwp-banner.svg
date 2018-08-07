@@ -28,7 +28,7 @@
      inkscape:cx="207.69708"
      inkscape:cy="241.98485"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="2493"
      inkscape:window-height="1385"
@@ -67,7 +67,7 @@
        id="path1482"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#808080;fill-opacity:0.98268396;stroke-width:2.85714293"
+       style="fill:#808080;fill-opacity:0.98268397;stroke-width:2.85714293"
        d="M -95.428571,200.85714 V -100.57143 H 507.42857 1110.2857 V 200.85714 502.28571 H 507.42857 -95.428571 Z"
        id="path1484"
        inkscape:connector-curvature="0" />
@@ -89,26 +89,29 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="txt">
+     inkscape:label="txt"
+     style="display:inline">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.66666412px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:Orbitron;letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none"
-       x="55.714298"
-       y="175.71429"
-       id="text820"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.40474701px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:'Orbitron, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1.26434934"
+       x="594.54315"
+       y="159.50482"
+       id="text820"
+       transform="scale(0.85887204,1.1643178)"><tspan
          sodipodi:role="line"
          id="tspan818"
-         x="55.714298"
-         y="175.71429">Proceed with Protocol</tspan></text>
+         x="594.54315"
+         y="159.50482"
+         style="stroke-width:1.26434934">Proceed with Protocol</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:Orbitron;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
-       x="410"
-       y="301.42856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:'Orbitron, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none"
+       x="508.57144"
+       y="291.42856"
        id="text828"><tspan
          sodipodi:role="line"
          id="tspan826"
-         x="410"
-         y="301.42856">VR</tspan></text>
+         x="508.57144"
+         y="291.42856">VR</tspan></text>
   </g>
 </svg>
