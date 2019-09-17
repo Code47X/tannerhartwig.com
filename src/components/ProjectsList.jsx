@@ -7,6 +7,7 @@ import 'animate.css/animate.min.css';
 
 // Project Banners
 import pwpBanner from '../banners/pwp-banner.svg';
+import springPlaygroundBanner from '../banners/spring-playground-banner.svg';
 import reactMovieDbBanner from '../banners/react-movie-db-banner.svg';
 import txCrimeHeatBanner from '../banners/tx-crime-heatmap-banner.svg';
 import hotsInfoBanner from '../banners/hots-info-banner.svg';
@@ -14,6 +15,7 @@ import rchBanner from '../banners/rch-banner.svg';
 
 const projects = [
   { name: 'Proceed with Protocol', banner: pwpBanner, url: 'https://www.youtube.com/watch?v=ZkceC1eFtbs&list=PLVUwa2nMf4IHiDuzCsR7v8aQFwT52hDn1&index=2' },
+  { name: 'Spring Playground', banner: springPlaygroundBanner, url: 'http://spring-playground.s3-website.us-east-2.amazonaws.com' },
   { name: 'React Movie DB', banner: reactMovieDbBanner, url: 'https://github.com/Code47X/react-movie-db' },
   { name: 'Texas Crime Heatmap', banner: txCrimeHeatBanner, url: 'https://github.com/Code47X/TX-Data-Project' },
   { name: 'HotS Info', banner: hotsInfoBanner, url: 'https://github.com/Code47X/react-hots-site' },
